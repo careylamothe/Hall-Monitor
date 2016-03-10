@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hall Monitor</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootswatch.css">
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- Optional theme -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper-main">
+      <div class="containter-main">
+
+        <div id="header-wrapper" class="row">
+          <div  class"col-md-8 col-md-offset-2">
+
+            <div id="container-header" class="row">
+              <div id="heading-main" class="col-md-3 col-md-offset-1">
+                <h1>
+                  <strong>Hall Monitor</strong>
+                </h1>
+              </div>
+              <div id="logo" class="col-md-5-offset-1">
+                <img src="http://www.littleeagles.org/images/le_logo_web_lg11.jpg" alt="logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="classroom" class="wrapper">
+          <div class="row">
+            <h2 class="col-md-2 col-md-offset-1">Eagles</h2>
+            <div id="classCount" class="col-md-2 col-md-offset-1">
+              <h3> Classroom Count</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+              <img src="https://tse1.mm.bing.net/th?&id=OIP.M4ecd7bae1bd90288aacb3ee77a306b59o0&w=300&h=199&c=0&pid=1.9&rs=0&p=0" height="175px" width="250px" alt="eagle"/>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="attendance" class="wrapper">
+          <div class="row">
+            <h2 class="col-md-4 col-md-offset-4">Attendance Log</h2>
+          </div>
+          <div id="logHeading" class="row">
+            <h3 class="col-md-2 col-md-offset-3"><strong>Student</strong></h3>
+            <h3 class="col-md-2"><strong>Guardian</strong></h3>
+            <h3 class="col-md-2"><strong>Time</strong></h3>
+          </div>
+          <div id="inHeading" class="row">
+            <div class="col-md-2 col-md-offset-3"><h3>Checked In</h3></div>
+          </div>
+          <div id="inData"class="row"></div>
+          <br>
+          <div id="outHeading" class="row">
+            <div class="col-md-2 col-md-offset-3"><h3>Checked Out</h3></div>
+          </div>
+          <div id="outData"class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

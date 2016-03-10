@@ -1,0 +1,34 @@
+.wrapper-main {
+  background: #D4E05D;
+}
+#heaader-wrapper {
+  border: solid 1px white;
+}
+#container-main {
+  border: solid 1px white;
+  background: #D4E05D;
+}
+#container-header {
+  border: solid 2px white;
+  background: #AFBE2F;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.wrapper {
+    border: solid 2px white;
+    padding-top: 20px;
+    padding-bottom: 25px
+}
+#button-orca #button-eagle {
+  width: 200px
+}
+.button {
+  height: 200px;
+  width:  210px
+}
+#message-container {
+  padding-bottom: 30px;
+}
+#attndance {
+  border: solid 1px white;
+}
