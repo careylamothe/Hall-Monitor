@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Hall Monitor</title>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="bootswatch.css">
       <!-- Latest compiled and minified CSS -->
@@ -48,8 +48,8 @@
               <h3>Eagles</h3>
               <img src="https://tse1.mm.bing.net/th?&id=OIP.M4ecd7bae1bd90288aacb3ee77a306b59o0&w=300&h=199&c=0&pid=1.9&rs=0&p=0" height="175px" width="220px" alt="eagle"/>
             </button>
-            <div style="display:none;" class="col-md-2 col-md-offset-1">
-              <button id="CheckIn" type="button" name="check-in/out" class="check">
+            <div class="col-md-2 col-md-offset-1">
+              <button id="checkIn" type="button" name="check-in/out" class="check" style="display:none;">
                 <h3>Check-in</h3>
               </button>
             </div>
@@ -64,7 +64,7 @@
             <form>
               <label for="child-eagles" class="col-md-1">Student
               </label>
-              <select id="eaglesInput" class="col-md-3" style="display:none;">
+              <select id="eaglesStudent" class="col-md-3" style="display:none;">
                 <option>Miles</option>
                 <option>Juhstis</option>
                 <option>Salem</option>
@@ -80,11 +80,9 @@
             <div id="heading-guardian" class="col-md-2 col-md-offset-1">
               <h3>Enter grown-up</h3>
             </div>
-            <form>
-              <label for="guardian" class="col-md-1">Guardian
-              </label>
-              <input type='text' id='guardian' placeholder='name' class="col-md-3" value="">
-            </form>
+            <label for="guardian" class="col-md-1">Guardian
+            </label>
+            <input type='text' id='guardian' placeholder='name' class="col-md-3" value="">
           </div>
         </div>
 
