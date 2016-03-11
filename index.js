@@ -7,6 +7,7 @@
       var $option = $('<option />');
 
       $option.attr('value', snapshot.key());
+      $option.attr('data-status', snapshot.val().status);
       $option.text(snapshot.val().name);
 
       $eaglesStudent.append($option);
@@ -14,7 +15,6 @@
 
     //var $orcasStudent = $('select.#orcasStudent').val();
 
-    var status = 'out';
 
     //when classroom button is clicked, show child list.
     $('#eagle-button').on('click', function() {
@@ -25,6 +25,8 @@
       // When the grown-up field is entered, show checkIn button if the value is false.
       $('#guardian').keypress(function (e) {
         if (e.keyCode == 13) {
+          var status = $('option:selected').attr('data-status');
+
           if (status === "out") {
             $('#checkIn').show();
             } else {
@@ -36,11 +38,12 @@
               $('.check').hide();
               if (status === 'in') {
                 status = 'out';
-                } else {
+              } else {
                 status = 'in';
-                }
+              }
 
-              var key = $('option:selected').attr('value');
+              var $selected = $('option:selected');
+              var key = $selected.attr('value');
 
               dataRef.child(key).update({
                 guardian: $guardian.val(),
@@ -48,8 +51,10 @@
                 status: status
               });
 
-              $guardian.val('');
+              $selected.attr('data-status', status);
 
+              // TODO: think of a better solution that doesn't break the flow
+              // $guardian.val('');
             })
           }
 
