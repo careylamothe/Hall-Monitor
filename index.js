@@ -17,12 +17,18 @@ $(document).ready(function () {
        if (e.keyCode == 13) {
          if (status === "checked out") {
            $('#checkIn').show();
+           //Add a check-out button
 
            //When the check-in button is clicked, get input log data and push to Firebase
            $('.check').on('click', function (e) {
              time = Date.now();
              counter();
-             status = 'checked in';
+             if (status = 'checked in') {
+               status === 'checked out';
+             }
+             else {
+               status === 'checked in';
+             }
 
              dataRef.push({
                classCount: count,
