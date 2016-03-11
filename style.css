@@ -17,7 +17,7 @@
 .wrapper {
     border: solid 2px white;
     padding-top: 20px;
-    padding-bottom: 25px
+    padding-bottom: 20px
 }
 #button-orca #button-eagle {
   width: 200px
@@ -26,9 +26,19 @@
   height: 200px;
   width:  210px
 }
+#buttons {
+  padding-bottom: 20px;
+}
 #message-container {
   padding-bottom: 30px;
 }
-#attndance {
-  border: solid 1px white;
+#attendance {
+  background: #AABBDC;
+}
+#classroom {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#logHeading {
+  padding-top: 5px;
 }
